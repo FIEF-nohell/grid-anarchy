@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Grid Anarchy
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div *ngFor="let x of grid">
+    <div id="box"       *ngIf="x == 0"></div>
+    <div id="box_full"  *ngIf="x == 1"></div>
+  </div>
+
+</ion-content>
