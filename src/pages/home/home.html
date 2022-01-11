@@ -3,16 +3,20 @@
     <ion-title>
       Grid Anarchy
     </ion-title>
+    
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
   <div id="cont">
-    <div id="item" *ngFor="let x of grid">
-        <div id="box"       *ngIf="x == 0"></div>
-        <div id="box_full"  *ngIf="x == 1"></div>
+    <div id="item" *ngFor="let x of grid; index as i">
+        <div id="box"       *ngIf="x == 0" (click)="clicked(i, 0)"></div>
+        <div id="box_full"  *ngIf="x == 1" (click)="clicked(i, 1)"></div>
     </div>  
   </div>
+
+  <ion-toggle id="online_toggle"></ion-toggle>
+  
 
 </ion-content>
