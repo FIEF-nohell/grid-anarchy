@@ -1,9 +1,9 @@
 
 #cont{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(0px, 0fr));
-    gap: 20px;
-    width: 100%;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #box{
