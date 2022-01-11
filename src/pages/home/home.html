@@ -16,7 +16,8 @@
     </div>  
   </div>
 
-  <ion-toggle id="online_toggle"></ion-toggle>
+  <ion-toggle [(ngModel)]="online_toggle" (ionChange)="toggled()" id="online_toggle">ses</ion-toggle>
+  <a id="clear_text" (click)="clear()" *ngIf="online_toggle == true" href="#">clear</a>
   
 
 </ion-content>
