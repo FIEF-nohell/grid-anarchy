@@ -1,22 +1,29 @@
 
-
+#cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(0px, 0fr));
+    gap: 20px;
+    width: 100%;
+}
 
 #box{
+    display: flex;
+    flex-flow: row wrap;
     height: 20px;
     width: 20px;
     border-color: black;
     border-width: 1px;
     border-style: solid;
-    margin: 10px;
 }
 
 #box_full{
+    display: flex;
+    flex-wrap: wrap;
     background-color: black;
     height: 20px;
     width: 20px;
     border-color: black;
     border-width: 1px;
     border-style: solid;
-    margin: 10px;
 }
 

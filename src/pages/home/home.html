@@ -8,9 +8,11 @@
 
 <ion-content padding>
 
-  <div *ngFor="let x of grid">
-    <div id="box"       *ngIf="x == 0"></div>
-    <div id="box_full"  *ngIf="x == 1"></div>
+  <div id="cont">
+    <div id="item" *ngFor="let x of grid">
+        <div id="box"       *ngIf="x == 0"></div>
+        <div id="box_full"  *ngIf="x == 1"></div>
+    </div>  
   </div>
 
 </ion-content>
